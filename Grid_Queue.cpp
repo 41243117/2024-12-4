@@ -39,7 +39,7 @@ inline bool Queue<T>::IsEmpty() const{
 template<class T>
 inline T& Queue<T>::Front() const{
 	if (IsEmpty())throw"Queue is empty.No front element.";
-	return queue[(front + 2) % capacity];
+	return queue[(front + 1) % capacity];
 }
 
 template<class T>
